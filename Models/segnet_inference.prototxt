@@ -5,7 +5,7 @@ layer {
   top: "data"
   top: "label"
   dense_image_data_param {
-    source: "/SegNet/CamVid/test.txt"	# Change this to the absolute path to your data file
+    source: "/home/dongwonshin/Desktop/SegNet-Tutorial/SUN_RGBD(reduced)/test.txt"	# Change this to the absolute path to your data file
     batch_size: 1
   }
 }
@@ -1544,7 +1544,7 @@ layer {
     bias_filler {
       type: "constant"
     }
-    num_output: 11
+    num_output: 34
     pad: 1
     kernel_size: 3
   }

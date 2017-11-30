@@ -1,1 +1,7 @@
 *.caffemodel
+
+Datasets/
+Models/
+caffe-segnet/
+docker/
+Example_Models/

@@ -59,8 +59,35 @@ for i in range(0, args.iter):
 	Bicyclist = [0,128,192]
 	Unlabelled = [0,0,0]
 
-	label_colours = np.array([Sky, Building, Pole, Road, Pavement, Tree, SignSymbol, Fence, Car, Pedestrian, Bicyclist, Unlabelled])
-	for l in range(0,11):
+	Sky2 = [128,128,128]
+	Building2 = [128,0,0]
+	Pole2 = [192,192,128]
+	Road_marking2 = [255,69,0]
+	Road2 = [128,64,128]
+	Pavement2 = [60,40,222]
+	Tree2 = [128,128,0]
+	SignSymbol2 = [192,128,128]
+	Fence2 = [64,64,128]
+	Car2 = [64,0,128]
+	Pedestrian2 = [64,64,0]
+	Bicyclist2 = [0,128,192]
+	Unlabelled2 = [0,0,0]
+
+	Sky3 = [128,128,128]
+	Building3 = [128,0,0]
+	Pole3 = [192,192,128]
+	Road_marking3 = [255,69,0]
+	Road3 = [128,64,128]
+	Pavement3 = [60,40,222]
+	Tree3 = [128,128,0]
+	SignSymbol3 = [192,128,128]
+	
+
+
+	label_colours = np.array([Sky, Building, Pole, Road_marking, Road, Pavement, Tree, SignSymbol, Fence, Car, Pedestrian, Bicyclist, Unlabelled,
+							  Sky2, Building2, Pole2, Road_marking2, Road2, Pavement2, Tree2, SignSymbol2, Fence2, Car2, Pedestrian2, Bicyclist2, Unlabelled2,
+							  Sky3, Building3, Pole3, Road_marking3, Road3, Pavement3, Tree3, SignSymbol3])
+	for l in range(0,34):
 		r[ind==l] = label_colours[l,0]
 		g[ind==l] = label_colours[l,1]
 		b[ind==l] = label_colours[l,2]
